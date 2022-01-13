@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        header {
+            width: 100%;  
+            background-color: transparent;
+            position: fixed; /* An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. A fixed element does not leave a gap in the page where it would normally have been located.  */
+        }
+
+        #logo {
+            width: 150px;
+            height: 50px;
+
+        }
+
+        #ul {
+            list-style-type: none;    /* remove dots or changes dots shape if its a different type  */
+            display: flex;    /*   */
+            margin-left: 150px;
+        }
+
+        .service {
+            margin-right: 20px;
+            width: 80px;
+            height: 20px;
+        }
+
+        .service:hover {
+            color: lightgray;
+            cursor: pointer;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;   /*   */
+        }
+
+        #gh {
+            list-style-type: none;  /*   */
+            display: flex; /*   */
+            margin-left: 200px;
+            
+            
+            
+        }
+
+        .right {
+            margin-left: 30px;
+            height: 10px;
+            text-align: right;
+        }
+
+        .right:hover {
+            color: lightgray;
+            cursor: pointer;
+        }
+
+        .title {
+            font-size: 50px;
+           
+        }
+
+        .paragraph {
+            text-align: center;
+
+        }
+
+        .paragraph:hover {
+            color: lightgray;
+            cursor: pointer;
+        }
+
+
+        .button {
+            margin-left: 15px;
+            position: relative; /*   */
+            top: 390px;
+            left: 420px;
+            border-radius: 15px;
+            font-size: 16px;
+            height: 45px;
+            width: 275px;
+            cursor: pointer;
+            
+        }
+
+        .button:hover {
+            color: lightgray;
+
+        }
+
+
+        #custom {
+            background-color: black;
+            color: white;
+
+        }
+
+        #custom:hover {
+            background-color: lightgray;
+            color: black;
+        }
+
+        #existing:hover {
+            background-color: lightgray;
+            color: black;
+
+        }
+
+        .bg-image {
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat; /*   */
+            background-size: cover;
+            transition-duration: 4s;/*   */
+            transition-delay: 2s;/*   */
+        }
+
+        .img1 {
+            background-image: url(https://wallpaperaccess.com/full/486526.jpg);
+        }
+
+        .img2 {
+            background-image: url(https://wallpaperaccess.com/full/800354.jpg);
+        }
+
+        .img3 {
+            background-image: url(https://wallpaperaccess.com/full/2257179.jpg);
+        }
+
+        .img4 {
+            background-image: url(https://wallpaperaccess.com/full/1152716.jpg);
+
+        }
+
+        .img5 {
+            background-image: url(https://www.tesla.com/sites/default/files/images/design-solar-panels-social.jpg);
+
+        }
+
+        .img6 {
+            background-image: url(https://greenauthority.com/wp-content/uploads/2021/08/tesla-solar-roof-1.jpg);
+
+        }
+        #div {
+            display: flex;
+            
+        }
+       #carTitle {
+           display: flex;
+           justify-content: center;
+       }
+        
+    </style>
+
+</head>
+
+<body>
+    
+    <header>
+        <div id="div">
+            <img src="https://www.logo.wine/a/logo/Tesla%2C_Inc./Tesla%2C_Inc.-Wordmark-Black-Logo.wine.svg" id="logo">
+            <ul id="ul">
+                <li class="service">Model X</li>
+                <li class="service"> Model S</li>
+                <li class="service">Model Y</li>
+                <li class="service"> Model 3</li>
+                <li class="service">Solar Roof</li>
+                <li class="service">Solar Panels</li>
+            </ul>
+            <ul id="gh">
+                <li class="right">Shop</li>
+                <li class="right">Account</li>
+                <li class="right">Menu</li>
+
+            </ul>
+
+        </div>
+        <div>
+
+            <body>
+                <p class="title" id="carTitle">Model S </p>
+                <p class="paragraph">Order Online for <u>Touchless Delivery</u></p>
+            </body>
+        </div>
+        <div>
+            <footer>
+
+                <button class="button" id="custom">CUSTOM ORDER</button>
+                <button class="button" id="existing">EXISTING INVENTORY</button>
+
+
+
+
+            </footer>
+
+        </div>
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+    <div class="bg-image img1"></div>
+    <div class="bg-image img2"></div>
+    <div class="bg-image img3"></div>
+    <div class="bg-image img4"></div>
+    <div class="bg-image img5"></div>
+    <div class="bg-image img6"></div>
+</body>
+
+
+</html>
